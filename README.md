@@ -16,6 +16,10 @@ Place required dependency record(which can be found below) in your Cargo.toml fi
 ```
 blinmaker = {git="https://github.com/ilchub/blinmaker2.git"}
 ```
+or
+```
+blinmaker = "2.1.0"
+```
 Next thing you'll required to do, it's to include it in your code. For this, use this syntax:
 ```
 use blinmaker;
