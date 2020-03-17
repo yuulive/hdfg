@@ -10,15 +10,15 @@ This instructions will get you through steps, needed to start including and usin
 
 For using this library you'll need configured Rust development environment, which includes Rust compiler(rustc) and project management system(cargo)
 
-### Integrating
-                                                                                                                                                                                                                                             
-    Place required dependency record(which can be found below) in your Cargo.toml file in the directory with your project.
+### Integrating                                                                                                                                                                                                                                         
+Place required dependency record(which can be found below) in your Cargo.toml file in the directory with your project.
+    
 ```
 blinmaker = {git="https://github.com/ilchub/blinmaker2.git"}
 ```
-    Next thing you'll required to do, it's to include it in your code. For this, use this syntax:
+Next thing you'll required to do, it's to include it in your code. For this, use this syntax:
 ```
-#include "blinmaker.h"
+use blinmaker;
 ```
 ### Testing
 
