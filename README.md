@@ -1,4 +1,4 @@
-# Blinmaker 2.1.0
+# Blinmaker 2.1.1
 
 Rust-based library for calculating amount of blins(pencakes) you can make using given amount of materials(eggs, milk, flour)
 
@@ -107,7 +107,7 @@ MILK_MIN: f32 = 200.0;
 See "Examples" to find out how to use them
 ### Examples
 
-Please consider looking inside [blinmaker-cli]() repository. This is ready to use program which was built with usage of this library. To compile and run this program, please run:
+Please consider looking inside [blinmaker-cli](https://github.com/ilchub/blinmaker-cli) repository. This is ready to use program which was built with usage of this library. To compile and run this program, please run:
 ```
 cargo build
 cargo run
