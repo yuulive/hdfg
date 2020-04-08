@@ -18,7 +18,7 @@ blinmaker = {git="https://github.com/ilchub/blinmaker2.git"}
 ```
 or
 ```
-blinmaker = "2.1.0"
+blinmaker = "2.1.1"
 ```
 Next thing you'll required to do, it's to include it in your code. For this, use this syntax:
 ```
