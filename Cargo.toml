@@ -1,12 +1,12 @@
 [package]
-name = "blinmaker"
-version = "2.1.1"
+name = "qi"
+version = "0.0.1"
 authors = ["ilchub, drag0nhaze"]
 edition = "2018"
 license = "GPL-3.0"
-description = "A Rust-based library for calculating how many blins(penkakes) you can make from certain amount of materials"
-repository = "https://github.com/ilchub/blinmaker2.git"
+description = "QI is a Rust-based library for calculating how many qiins(penkakes) you can make from certain amount of materials"
+repository = "https://github.com/yuulive/qi.git"
 readme = "README.md"
-documentation = "https://github.com/ilchub/blinmaker2/blob/master/README.md"
+documentation = "https://github.com/yuulive/qi/blob/master/README.md"
 
 [dependencies]

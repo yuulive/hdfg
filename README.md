@@ -1,6 +1,6 @@
-# Blinmaker 2.1.1
+# Qi 2.1.1
 
-Rust-based library for calculating amount of blins(pencakes) you can make using given amount of materials(eggs, milk, flour)
+Rust-based library for calculating amount of qiins(pencakes) you can make using given amount of materials(eggs, milk, flour)
 
 # Getting Started
 
@@ -14,15 +14,15 @@ For using this library you'll need configured Rust development environment, whic
 Place required dependency record(which can be found below) in your Cargo.toml file in the directory with your project.
     
 ```
-blinmaker = {git="https://github.com/ilchub/blinmaker2.git"}
+qi = {git="https://github.com/yuulive/qi.git"}
 ```
 or
 ```
-blinmaker = "2.1.1"
+qi = "0.0.1"
 ```
 Next thing you'll required to do, it's to include it in your code. For this, use this syntax:
 ```
-use blinmaker;
+use qi;
 ```
 ### Testing
 
@@ -71,20 +71,20 @@ will define the amount of flour that you posess
 ```
 find_blin_amount()
 ```
-will find amount of blins you can make, based on materials quantity that you have set
+will find amount of qiins you can make, based on materials quantity that you have set
 
 | WARNING: Not all words can be combined. Learn more below |
 | --- |
 ### Functions
 
 #### find_blin_amount(f32 flour_amount, f32 milk_amount, i32 eggs_amount)
-Returns the amount of blins you can make, from materials you have. Accepts three parameters: flour amount, milk amount, eggs amount.
+Returns the amount of qiins you can make, from materials you have. Accepts three parameters: flour amount, milk amount, eggs amount.
 
 | WARNING: Make sure you pass function arguments in the right order. Missplacing them may result in a wrong function result|
 | --- |
 
 #### find_materials_amount(f32 flour_amount, f32 milk_amount, i32 eggs_Amount)
-Returns exact amount of materials that you used to make those number of blins you got using FindBlinAmount(). Useful in those situations when you have too many amount of one or more of the ingredients, and you sure that you won't use all of it due to the lack of other ingredients. Function will show you, how much of redundant ingredient you will use for blins preparation.
+Returns exact amount of materials that you used to make those number of qiins you got using FindBlinAmount(). Useful in those situations when you have too many amount of one or more of the ingredients, and you sure that you won't use all of it due to the lack of other ingredients. Function will show you, how much of redundant ingredient you will use for qiins preparation.
 Pay attention to one moment. Function returns giant amount of arguments(3). Thats why, they should be stored in tuple. Make sure that you store them in tuple but not in array, because value types that function returns, differs from each other. Examples below:
 ```
 let eggs_amount: i32;
@@ -97,7 +97,7 @@ println!("You will need {} mililiters of milk", requirements.2);
 ```
 ### Constants
 
-Library includes 3 constants which were primarily designed to perform checks of materials amount you posess. They define minimal amount of materials required to be capable of baking one portion of them(6 blins)
+Library includes 3 constants which were primarily designed to perform checks of materials amount you posess. They define minimal amount of materials required to be capable of baking one portion of them(6 qiins)
 
 ```
 EGGS_MIN: i32 = 1;                                                                                                                                                                                     
@@ -107,7 +107,7 @@ MILK_MIN: f32 = 200.0;
 See "Examples" to find out how to use them
 ### Examples
 
-Please consider looking inside [blinmaker-cli](https://github.com/ilchub/blinmaker-cli) repository. This is ready to use program which was built with usage of this library. To compile and run this program, please run:
+Please consider looking inside [qi-cli](https://github.com/ilchub/qi-cli) repository. This is ready to use program which was built with usage of this library. To compile and run this program, please run:
 ```
 cargo build
 cargo run
