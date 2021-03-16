@@ -1,4 +1,4 @@
-# Qi 2.1.1
+# Qi 0.0.1
 
 Rust-based library for calculating amount of qiins(pencakes) you can make using given amount of materials(eggs, milk, flour)
 
